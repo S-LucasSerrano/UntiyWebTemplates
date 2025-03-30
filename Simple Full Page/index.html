@@ -5,9 +5,9 @@
 	<meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-	<link rel="shortcut icon" href="TemplateData/favicon.ico">
     <title>{{{ PRODUCT_NAME }}}</title>
-
+	<link rel="shortcut icon" href="TemplateData/favicon.ico">
+	
 	<link rel="stylesheet" href="TemplateData/style.css">
 </head>
 
@@ -76,7 +76,7 @@
 		};
 		// This function loads the game (it's included in the script imported above),
 		//		drawing the game on the target canvas, with the target cofig and calling the target function with the loading progress.
-		createUnityInstance(document.querySelector("#unity-canvas"), config, onLoadProgress);
+		createUnityInstance(canvas, config, onLoadProgress);
 		</script>
   	</body>
 </html>
